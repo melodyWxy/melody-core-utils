@@ -35,7 +35,7 @@ function createInputOptions(){
                 runtimeHelpers: true
             }),
             livereload(),
-            tsPlugin
+            tsPlugin,
         ],
         // 指出应将哪些模块视为外部模块
         external: ['react']
