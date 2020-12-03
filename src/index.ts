@@ -1,5 +1,9 @@
-import * as MW from './lifeHooks/index';
-import SetCookie from './set-cookies';
+import * as lifeHooks from './life-hooks';
+import cookies from './cookie-contrulor';
+import melodyStore from './melody-flux-store';
 
-
-export default MW ;
+export default {
+    lifeHooks,
+    cookies,
+    melodyStore
+}
