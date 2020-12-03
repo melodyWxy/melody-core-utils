@@ -22,11 +22,11 @@ class Cookie {
     }
     // 设置 默认使用lingyansi.space这样全局cookie
     // 子域名只能获取子域名、全局域名下的cookie
-    set = (key, value, day = 365, domain = '') => {
+    set = (key, value, day: number|string = 365, domain = '') => {
         let date = Date.now()
-        date = date + day * 1000 * 60 * 60 * 24
+        date = date + (+day) * 1000 * 60 * 60 * 24
         let EXPIRES = new Date(date).toUTCString()
-        let MAX_AGE = 60 * 60 * 24 * day
+        let MAX_AGE: number|string  = 60 * 60 * 24 * (+day)
         let DOMAINS = []
 
         if (day < 0 ) {

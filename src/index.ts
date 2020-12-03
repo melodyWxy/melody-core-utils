@@ -1,6 +1,6 @@
 import * as lifeHooks from './life-hooks';
-import cookies from './cookie-contrulor';
-import melodyStore from './melody-flux-store';
+import * as cookies from './cookie-contrulor';
+import * as melodyStore from './melody-flux-store';
 
 export default {
     lifeHooks,
